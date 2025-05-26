@@ -2,8 +2,6 @@
 
 This is a **modified fork** of the official [xmrig/xmrig-proxy](https://github.com/xmrig/xmrig-proxy). It has been adapted with specific changes primarily aimed at mining **Tari (XTM)** using its **RandomX** algorithm, along with other modifications.
 
-**USE THIS SOFTWARE AT YOUR OWN RISK. MODIFICATIONS MAY INTRODUCE BUGS OR UNEXPECTED BEHAVIOR. REMOVING DEVELOPER FEES IMPACTS THE PROJECT'S SUSTAINABILITY – CONSIDER SUPPORTING THE ORIGINAL XMRIG DEVELOPERS.**
-
 ---
 
 ## Key Changes in This Fork
