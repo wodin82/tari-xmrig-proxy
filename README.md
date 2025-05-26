@@ -8,7 +8,7 @@ This is a **modified fork** of the official [xmrig/xmrig-proxy](https://github.c
 
 1.  **Tari (XTM) Support Added:**
     * A specific coin entry for "Tari" (`XTM`) has been added, configured to use the `rx/0` (RandomX) algorithm.
-    * This allows `xmrig-proxy` to be used with pools supporting Tari merge-mining via RandomX.
+    * This allows `xmrig-proxy` to be used with pools supporting Tari mining via RandomX.
 
 2.  **Wallet Address Validation Disabled:**
     * The code responsible for checking the format and validity of miner wallet addresses upon connection has been bypassed.
@@ -21,41 +21,6 @@ This is a **modified fork** of the official [xmrig/xmrig-proxy](https://github.c
 * **No Official Support:** This is an unofficial fork. Do *not* seek support for issues related to these modifications from the official XMRig developers.
 * **Use At Your Own Risk:** These changes might introduce instability or have unforeseen consequences. Test thoroughly before deploying in a critical environment.
 * **Wallet Validation Disabled:** Be extremely careful with your wallet address configurations. The proxy will no longer warn you about potentially invalid formats. You are solely responsible for ensuring your payouts go to the correct address.
-
----
-
-Markdown
-
-# xmrig-proxy - Tari (XTM) / No-Fee / No-Validation Fork
-
-This is a **modified fork** of the official [xmrig/xmrig-proxy](https://github.com/xmrig/xmrig-proxy). It has been adapted with specific changes primarily aimed at mining **Tari (XTM)** using its **RandomX** algorithm, along with other modifications.
-
-**USE THIS SOFTWARE AT YOUR OWN RISK. MODIFICATIONS MAY INTRODUCE BUGS OR UNEXPECTED BEHAVIOR. REMOVING DEVELOPER FEES IMPACTS THE PROJECT'S SUSTAINABILITY – CONSIDER SUPPORTING THE ORIGINAL XMRIG DEVELOPERS.**
-
----
-
-## Key Changes in This Fork
-
-1.  **Tari (XTM) Support Added:**
-    * A specific coin entry for "Tari" (`XTM`) has been added, configured to use the `rx/0` (RandomX) algorithm.
-    * This allows `xmrig-proxy` to be used with pools supporting Tari merge-mining via RandomX.
-
-2.  **Developer Donation Fee Removed:**
-    * The source code has been modified to set the default and minimum developer donation levels to 0%.
-    * This completely disables the proxy's developer fee mechanism.
-
-3.  **Wallet Address Validation Disabled:**
-    * The code responsible for checking the format and validity of miner wallet addresses upon connection has been bypassed.
-    * This allows the use of any string as a wallet address, including Tari addresses which might not pass standard Monero validation checks. **Warning:** This increases the risk of mining with an invalid address – **double-check your configurations to avoid lost funds!**
-
----
-
-## Disclaimer & Warnings
-
-* **No Official Support:** This is an unofficial fork. Do *not* seek support for issues related to these modifications from the official XMRig developers.
-* **Use At Your Own Risk:** These changes might introduce instability or have unforeseen consequences. Test thoroughly before deploying in a critical environment.
-* **Wallet Validation Disabled:** Be extremely careful with your wallet address configurations. The proxy will no longer warn you about potentially invalid formats. You are solely responsible for ensuring your payouts go to the correct address.
-* **Support Original Developers:** The removal of dev fees directly affects the developers who create and maintain the core XMrig software. If you find XMrig useful, please consider supporting them through other means.
 
 ---
 
